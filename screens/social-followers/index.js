@@ -95,22 +95,39 @@ const styles = StyleSheet.create({
     fontSize: 14
   },
   separator: {
-    height: 50,
-    width: "100%",
+    height: 42,
+    width: 348,
     backgroundColor: "#DADADA",
-    flexDirection: "column",
     justifyContent: "center"
   },
   separatorText: {
     marginLeft: 30,
-    color: "#8F8D86"
+    color: "#8F8D86",
+    width: 300,
+    height: 17
   },
   hBDTdTpY: {
-    width: 341,
+    width: 250,
     height: 62,
     position: "relative",
     left: 28,
     top: 4
+  },
+  WIoLCCOb: {
+    width: 349,
+    height: 53,
+    flexDirection: "column",
+    flex: 1
+  },
+  njnvhfxv: {
+    flex: 1,
+    width: 348,
+    height: 39
+  },
+  opdbuXOk: {
+    flex: 1,
+    width: 348,
+    height: 9
   }
 });
 export default SocialFollowersScreen;
@@ -154,11 +171,12 @@ const FollowerStyles = StyleSheet.create({
 const textStyles = StyleSheet.create({
   input: {
     backgroundColor: "#fff",
-    height: 53,
+    height: 45,
     color: "#000",
     borderRadius: 10,
     fontSize: 14,
-    paddingHorizontal: 10
+    paddingHorizontal: 10,
+    width: 306
   },
   error: {
     fontSize: 13,
