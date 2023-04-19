@@ -1,7 +1,8 @@
+import { ImageBackground } from "react-native";
 import React, { useState, useEffect } from "react";
 import { Text, StyleSheet, View, TextInput, Image, ScrollView } from "react-native";
 
-const SocialFollowersScreen = params => {
+const SocialFollowersScreen = () => {
   const [value, setValue] = useState("");
   const [frequentlyContacted, setFrequentlyContacted] = useState([]);
   const [followers, setFollowers] = useState([]);
@@ -43,7 +44,7 @@ const SocialFollowersScreen = params => {
             <TextInput style={textStyles.input} placeholder="Enter" value={value} onChangeText={text => setValue(text)} placeholderTextColor="#ddd" />
             <Image source={require("./assets/search.png")} style={styles.searchIcon} />
           </View>
-        </View>
+        <ImageBackground style={styles.hBDTdTpY} source={require("./Screenshot 2023-04-13 at 2.12.54 AM.png")} resizeMode="cover"></ImageBackground></View>
         <Text style={styles.numFollowers}>{numFollowers} Followers</Text>
         <View style={styles.separator}>
           <Text style={styles.separatorText}>Frequently</Text>
@@ -103,6 +104,13 @@ const styles = StyleSheet.create({
   separatorText: {
     marginLeft: 30,
     color: "#8F8D86"
+  },
+  hBDTdTpY: {
+    width: 341,
+    height: 62,
+    position: "relative",
+    left: 28,
+    top: 4
   }
 });
 export default SocialFollowersScreen;
