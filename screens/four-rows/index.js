@@ -1,14 +1,19 @@
+import { useNavigation } from "@react-navigation/native";
+import { Pressable } from "react-native";
 import React from "react";
 import { View, StyleSheet, ScrollView } from "react-native";
 
 const FourRows = () => {
+  const navigation = useNavigation();
   return <ScrollView contentContainerStyle={styles.container}>
       <View style={styles.sectionContainer}>
-        <View style={styles.section}>
+        <Pressable onPress={() => {
+        navigation.navigate("socialFollowers");
+      }}><View style={styles.section}>
           {
-          /* YOUR CODE HERE */
-        }
-        </View>
+            /* YOUR CODE HERE */
+          }
+        </View></Pressable>
         <View style={styles.section}>
           {
           /* YOUR CODE HERE */
